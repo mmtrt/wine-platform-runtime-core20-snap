@@ -152,6 +152,9 @@ parts:
       'zenity': bin/
       'wprfile': bin/
       'nlpfile': bin/
+    build-packages:
+      - libglib2.0-0
+      - libxml2
     stage-packages:
       - cabextract         # winetricks
       - libgdk-pixbuf2.0-0 # yad
