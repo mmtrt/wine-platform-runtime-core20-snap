@@ -155,6 +155,7 @@ parts:
     build-packages:
       - libglib2.0-0
       - libxml2
+      - libpsl5
     stage-packages:
       - cabextract         # winetricks
       - libgdk-pixbuf2.0-0 # yad
