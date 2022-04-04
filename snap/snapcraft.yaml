@@ -12,7 +12,7 @@ base: core20
 compression: lzo
 
 slots:
-  wine-runtime:
+  wine-runtime-c20:
     interface: content
     source:
       read:
