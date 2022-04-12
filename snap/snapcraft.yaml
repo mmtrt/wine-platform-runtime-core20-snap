@@ -170,8 +170,6 @@ parts:
       - yad                # winetricks
     override-build: |
       snapcraftctl build
-      touch $SNAPCRAFT_PART_INSTALL/wprfile
-      touch $SNAPCRAFT_PART_INSTALL/nlpfile
       update-mime-database $SNAPCRAFT_PART_INSTALL/usr/share/mime
       rm -rf $SNAPCRAFT_PART_INSTALL/etc/init
       rm -rf $SNAPCRAFT_PART_INSTALL/etc/init.d
@@ -233,3 +231,5 @@ parts:
         cd "/snap/$snap/current" && find * -type f,l -exec rm -r "$SNAPCRAFT_PRIME/{}" \; 2>/dev/null
       done
       find "$SNAPCRAFT_PRIME/" -empty -type d -delete 2>/dev/null
+      touch $SNAPCRAFT_PRIME/wprfile
+      touch $SNAPCRAFT_PRIME/nlpfile
