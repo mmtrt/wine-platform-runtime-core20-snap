@@ -144,6 +144,9 @@ parts:
       rm -rf $SNAPCRAFT_PART_INSTALL/usr/share/pkgconfig
     after:
       - enable-i386
+    prime:
+      - -usr/share/vulkan/icd.d/lvp_icd.i686.json
+      - -usr/share/vulkan/icd.d/lvp_icd.x86_64.json
 
   wine-platform-runtime:
     plugin: dump
